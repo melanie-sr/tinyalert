@@ -1,0 +1,55 @@
+{
+  "hash": "cc09eebc",
+  "configHash": "2521b153",
+  "lockfileHash": "bb6e6ca6",
+  "browserHash": "391cce40",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7189c005",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "30f0ac87",
+      "needsInterop": true
+    },
+    "i18next": {
+      "src": "../../node_modules/i18next/dist/esm/i18next.js",
+      "file": "i18next.js",
+      "fileHash": "477ab7f7",
+      "needsInterop": false
+    },
+    "react-i18next": {
+      "src": "../../node_modules/react-i18next/dist/es/index.js",
+      "file": "react-i18next.js",
+      "fileHash": "d7602a96",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "e1369f55",
+      "needsInterop": false
+    },
+    "hamburger-react": {
+      "src": "../../node_modules/hamburger-react/dist-esm/index.js",
+      "file": "hamburger-react.js",
+      "fileHash": "b5d14972",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XQIPT53K": {
+      "file": "chunk-XQIPT53K.js"
+    },
+    "chunk-KS2M7ZJI": {
+      "file": "chunk-KS2M7ZJI.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

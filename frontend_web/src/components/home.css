@@ -1,0 +1,172 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+}
+
+.img-banner {
+  width: 100%;
+  height: auto;
+}
+
+.img-banner-desktop {
+  display: none;
+}
+
+.banner-content {
+  width: 90%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.title-banner {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-banner {
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.subtitle-banner {
+  text-align: center;
+  color: var(--color-primary);
+  font-family: var(--font-main);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: pre-line;
+}
+
+.title-disasters {
+  text-align: center;
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+}
+
+.carousel-disasters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem 2rem;
+}
+
+.home-disaster-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.disaster-img {
+  border-radius: 1rem;
+}
+
+.disaster-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .img-banner-mobile {
+    display: none;
+  }
+
+  .img-banner-desktop {
+    display: block;
+  }
+
+  .banner-content {
+    width: 70%;
+    justify-content: end;
+    gap: 3rem;
+  }
+
+  .title-banner {
+    font-size: 2.5rem;
+  }
+
+  .button-banner {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .subtitle-banner {
+    font-size: 1.2rem;
+  }
+
+  .carousel-disasters {
+    flex-direction: row;
+    gap: 7rem;
+    overflow-x: auto;
+  }
+
+  .disaster-card {
+    margin-bottom: 1rem;
+  }
+
+  .title-disasters {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-content {
+    width: 65%;
+  }
+
+  .title-banner {
+    font-size: 4rem;
+  }
+
+  .button-banner {
+    font-size: 2.5rem;
+  }
+
+  .subtitle-banner {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .banner-content {
+    gap: 10rem;
+  }
+}

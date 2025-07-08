@@ -1,0 +1,17 @@
+# Variables d'environnement
+.env
+
+# Dépendances Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Logs
+*.log
+
+# Cache
+.cache/
+.tmp/
+
+# Sauvegarde
+*.backup

@@ -1,0 +1,69 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Home",
+      "disasters": "Disasters",
+      "ranking": "Ranking"
+    },
+    "home": {
+      "title": "Are you ready to survive natural disasters?",
+      "subtitle": "A fun and educational experience.\n100% free on Roblox",
+      "button": "Play now on Roblox",
+      "disasters": {
+        "title": "Discovering disasters",
+        "tsunami": "Tsunami",
+        "earthquake": "Earthquake",
+        "volcano": "Volcano",
+        "fire": "Fire",
+        "tornado": "Tornado"
+      }
+    },
+    "disasters": {
+      "filter": "Search for a disaster",
+      "tsunami": {
+        "title": "Tsunami",
+        "description": "A tsunami is a series of ocean waves caused by a sudden displacement of water, often due to an underwater earthquake or a volcanic eruption."
+      },
+      "earthquake": {
+        "title": "Earthquake",
+        "description": "An earthquake is a shaking of the ground caused by the movement of the Earth's tectonic plates, releasing a large amount of energy."
+      },
+      "volcano": {
+        "title": "Volcano",
+        "description": "A volcano is an opening in the Earth's crust through which lava, ash, and volcanic gases are emitted."
+      },
+      "fire": {
+        "title": "Fire",
+        "description": "A fire is an uncontrolled combustion that can spread rapidly, causing property damage and posing risks to life."
+      },
+      "tornado": {
+        "title": "Tornado",
+        "description": "A tornado is a violently rotating column of air that extends from a thunderstorm to the ground, causing significant destruction."
+      },
+      "button": "Discover"
+    },
+    "ranking": {
+      "title": "Ranking"
+    },
+    "footer": {
+      "newsletter": {
+        "title": "Don't miss any news",
+        "email_placeholder": "Enter your email address"
+      },
+      "disasters": {
+        "title": "Disasters",
+        "tsunami": "Tsunami",
+        "earthquake": "Earthquake",
+        "volcano": "Volcano",
+        "fire": "Fire",
+        "tornado": "Tornado"
+      },
+      "infos": {
+        "title": "Useful information",
+        "about": "About us",
+        "contact": "Contact us"
+      },
+      "copyright": "Tiny Alert. All rights reserved."
+    }
+  }
+}

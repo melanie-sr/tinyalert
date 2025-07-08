@@ -1,0 +1,90 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Accueil",
+      "disasters": "Catastrophes",
+      "ranking": "Classement",
+      "register": "Inscription",
+      "login": "Connexion"
+    },
+    "home": {
+      "title": "Es-tu prêt à survivre aux catastrophes naturelles ?",
+      "subtitle": "Une expérience réalisete, fun et éducative.\n100% gratuite sur Roblox",
+      "button": "Jouer maintenant sur Roblox",
+      "disasters": {
+        "title": "Découvrir les catastrophes",
+        "tsunami": "Tsunami",
+        "earthquake": "Seisme",
+        "volcano": "Volcan",
+        "fire": "Incendie",
+        "tornado": "Tornade"
+      }
+    },
+    "disasters": {
+      "filter": "Rechercher une catastrophe",
+      "tsunami": {
+        "title": "Tsunami",
+        "description": "Un tsunami est une série de vagues océaniques causées par un déplacement soudain d'eau, souvent dû à un séisme sous-marin ou à une éruption volcanique."
+      },
+      "earthquake": {
+        "title": "Séisme",
+        "description": "Un séisme est un tremblement de terre causé par le mouvement des plaques tectoniques de la Terre, libérant une grande quantité d'énergie."
+      },
+      "volcano": {
+        "title": "Volcan",
+        "description": "Un volcan est une ouverture dans la croûte terrestre par laquelle la lave, les cendres et les gaz volcaniques sont émis."
+      },
+      "fire": {
+        "title": "Incendie",
+        "description": "Un incendie est une combustion incontrôlée qui peut se propager rapidement, causant des dégâts matériels et des risques pour la vie."
+      },
+      "tornado": {
+        "title": "Tornade",
+        "description": "Une tornade est une colonne d'air en rotation violente qui descend d'un orage et touche le sol, provoquant des destructions importantes."
+      },
+      "button": "Découvrir"
+    },
+    "ranking": {
+      "title": "Classement"
+    },
+    "register": {
+      "title": "S'inscrire",
+      "firstname": "Prénom :",
+      "lastname": "Nom :",
+      "email": "Adresse e-mail :",
+      "password": "Mot de passe :",
+      "confirm_password": "Confirmer le mot de passe :",
+      "submit": "S'inscrire",
+      "login_prompt": "Déjà inscrit ?",
+      "login_link": "Connectez-vous ici"
+    },
+    "login": {
+      "title": "Se connecter",
+      "email": "Adresse e-mail :",
+      "password": "Mot de passe :",
+      "submit": "Connexion",
+      "login_prompt": "Pas encore de compte ?",
+      "login_link": "Inscrivez-vous ici"
+    },
+    "footer": {
+      "newsletter": {
+        "title": "Ne rater rien des actualités",
+        "email_placeholder": "Entrez votre adresse email"
+      },
+      "disasters": {
+        "title": "Les catastrophes",
+        "tsunami": "Tsunami",
+        "earthquake": "Séisme",
+        "volcano": "Volcan",
+        "fire": "Incendie",
+        "tornado": "Tornade"
+      },
+      "infos": {
+        "title": "Infos utiles",
+        "about": "Qui sommes-nous ?",
+        "contact": "Nous contacter"
+      },
+      "copyright": "Tiny Alert. Tous droits réservés."
+    }
+  }
+}

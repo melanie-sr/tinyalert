@@ -1,0 +1,69 @@
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import Hamburger from "hamburger-react";
+import LanguageSelector from "../snippets/LanguageSelector";
+import "./navbar.css";
+
+function NavBar() {
+  const [isOpen, setOpen] = useState(false);
+  const { t } = useTranslation();
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-desktop">
+        <img className="nav-logo" src="/" alt="" />
+        <div className="nav-links">
+          <Link className="nav-link" to="/">
+            {t("navbar.home")}
+          </Link>
+          <Link className="nav-link" to="/disasters">
+            {t("navbar.disasters")}
+          </Link>
+          <Link className="nav-link" to="/ranking">
+            {t("navbar.ranking")}
+          </Link>
+        </div>
+        <div>
+          <Link className="nav-link" to="/register">
+            {t("navbar.register")}
+          </Link>
+          <Link className="nav-link" to="/login">
+            {t("navbar.login")}
+          </Link>
+          <LanguageSelector />
+        </div>
+      </div>
+      <div className="navbar-mobile">
+        <img className="nav-logo" src="/" alt="" />
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+        {isOpen && (
+          <div className={`hamburger-menu ${isOpen ? "menu-slide-in" : ""}`}>
+            <div className="nav-links">
+              <Link className="nav-link" to="/">
+                {t("navbar.home")}
+              </Link>
+              <Link className="nav-link" to="/disasters">
+                {t("navbar.disasters")}
+              </Link>
+              <Link className="nav-link" to="/ranking">
+                {t("navbar.ranking")}
+              </Link>
+            </div>
+            <div>
+              <Link className="nav-link" to="/register">
+                {t("navbar.register")}
+              </Link>
+              <Link className="nav-link" to="/login">
+                {t("navbar.login")}
+              </Link>
+              <LanguageSelector />
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;

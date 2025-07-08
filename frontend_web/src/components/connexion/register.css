@@ -1,0 +1,40 @@
+.register {
+  font-family: var(--font-main);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name-fields,
+.password-fields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.name-fields .field,
+.password-fields .field {
+  width: 48%;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}

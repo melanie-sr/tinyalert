@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Anton";
+  src: url("./assets/fonts/Anton-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Couleurs */
+  --color-primary: #ffffff;
+  --color-primary-opacity: rgba(255, 255, 255, 0.8);
+  --color-secondary: #53b2eb;
+  --color-text: #000000;
+
+  /* Fonts */
+  --font-main: "Open Sans", sans-serif;
+  --font-heading: "Anton", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* occupe tout l'espace restant */
+}
