@@ -5,11 +5,13 @@
       "disasters": "Catastrophes",
       "ranking": "Classement",
       "register": "Inscription",
-      "login": "Connexion"
+      "login": "Connexion",
+      "logout": "Déconnexion",
+      "profile": "Profil"
     },
     "home": {
       "title": "Es-tu prêt à survivre aux catastrophes naturelles ?",
-      "subtitle": "Une expérience réalisete, fun et éducative.\n100% gratuite sur Roblox",
+      "subtitle": "Une expérience réaliste, fun et éducative.\n100% gratuite sur Roblox",
       "button": "Jouer maintenant sur Roblox",
       "disasters": {
         "title": "Découvrir les catastrophes",
@@ -65,6 +67,21 @@
       "submit": "Connexion",
       "login_prompt": "Pas encore de compte ?",
       "login_link": "Inscrivez-vous ici"
+    },
+    "profile": {
+      "title": "Mon profil",
+      "email": "Adresse email",
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "new_password": "Nouveau mot de passe",
+      "confirm_password": "Confirmer le mot de passe",
+      "password_placeholder": "Laisse vide si inchangé",
+      "confirm_password_placeholder": "Confirme le mot de passe",
+      "save_changes": "Enregistrer les modifications",
+      "update_success": "Profil mis à jour avec succès.",
+      "update_error": "Erreur lors de la mise à jour du profil.",
+      "password_mismatch": "Les mots de passe ne correspondent pas.",
+      "network_error": "Erreur réseau. Veuillez réessayer."
     },
     "footer": {
       "newsletter": {

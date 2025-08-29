@@ -1,0 +1,8 @@
+{
+  "name": "test",
+  "scripts": {
+    "client": "src/client",
+    "server": "src/server",
+    "shared": "src/shared"
+  }
+}

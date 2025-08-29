@@ -5,20 +5,24 @@ API Node.js Express pour gérer les connexions de joueurs Roblox en temps réel.
 ## 🚀 Démarrage Rapide
 
 ### 1. Installer les dépendances
+
 ```bash
 npm install
 ```
 
 ### 2. Configuration automatique avec ngrok
+
 ```bash
 # Script tout-en-un qui configure ngrok + démarre le serveur
 ./setup-ngrok.sh
 ```
+
 **OU** configuration manuelle :
 
 **OU** configuration manuelle :
 
 ### 2a. Configurer les variables d'environnement
+
 ```bash
 # Copier le fichier d'exemple
 cp .env.example .env
@@ -28,6 +32,7 @@ nano .env
 ```
 
 ### 2b. Lancer le serveur
+
 ```bash
 # En production
 npm start
@@ -35,9 +40,11 @@ npm start
 # En développement (avec hot reload)
 npm run dev
 ```
+
 Le serveur démarre sur `http://localhost:3000`
 
 ### 2c. Exposer avec ngrok
+
 ```bash
 ngrok http 3000
 ```
@@ -45,6 +52,7 @@ ngrok http 3000
 ## 📁 Configuration des Variables
 
 Le fichier `.env` contient :
+
 ```bash
 API_BASE_URL=https://your-ngrok-url.ngrok-free.app
 PORT=3000
@@ -52,6 +60,7 @@ NODE_ENV=development
 ```
 
 ### 3. Exposer avec ngrok
+
 ```bash
 brew install ngrok
 
@@ -69,6 +78,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 **Ce que ça fait :** Ajoute un joueur à la liste quand il se connecte
 
 **Requête :**
+
 ```json
 {
   "username": "PlayerName",
@@ -77,6 +87,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 ```
 
 **Réponse :**
+
 ```json
 {
   "status": "ok"
@@ -84,6 +95,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 ```
 
 **Comment ça marche :**
+
 - Roblox envoie le nom et l'ID du joueur
 - L'API vérifie si le joueur existe déjà
 - Si non, il l'ajoute à la liste `playersConnected`
@@ -96,6 +108,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 **Ce que ça fait :** Retire un joueur de la liste quand il se déconnecte
 
 **Requête :**
+
 ```json
 {
   "userId": 123456789
@@ -103,6 +116,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 ```
 
 **Réponse :**
+
 ```json
 {
   "status": "ok"
@@ -110,6 +124,7 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 ```
 
 **Comment ça marche :**
+
 - Roblox envoie juste l'ID du joueur qui part
 - L'API cherche le joueur dans la liste
 - Il le supprime s'il le trouve
@@ -122,14 +137,16 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 **Ce que ça fait :** Récupère la liste de tous les joueurs connectés
 
 **Réponse :**
+
 ```json
 [
-  {"username": "Player1", "userId": 123},
-  {"username": "Player2", "userId": 456}
+  { "username": "Player1", "userId": 123 },
+  { "username": "Player2", "userId": 456 }
 ]
 ```
 
 **Comment ça marche :**
+
 - Pas besoin d'envoyer de données
 - Retourne directement la liste `playersConnected[]`
 - Mis à jour en temps réel
@@ -137,17 +154,21 @@ Récupérer l'URL HTTPS générée (ex: `https://abc123.ngrok-free.app`)
 ## 🔗 Configuration Roblox
 
 ### Automatique
+
 Le script `setup-ngrok.sh` met à jour automatiquement :
+
 - Le fichier `.env` du backend
 - Le fichier `init.server.luau` de Roblox
 
-### Manuelle  
+### Manuelle
+
 ```bash
 # Script interactif pour mettre à jour l'URL
 ./update-url.sh
 ```
 
 **OU** édition manuelle dans `src/server/init.server.luau` :
+
 ```lua
 BASE_URL = "https://VOTRE-URL-NGROK.ngrok-free.app"
 ```
@@ -155,6 +176,7 @@ BASE_URL = "https://VOTRE-URL-NGROK.ngrok-free.app"
 ## 🔄 Migration Python → Node.js
 
 ✅ **Terminé :**
+
 - ✅ Code FastAPI converti en Express.js
 - ✅ Routes API identiques (`/api/player-connected`, `/api/player-disconnected`, `/api/players`)
 - ✅ Même format de données JSON
@@ -162,8 +184,9 @@ BASE_URL = "https://VOTRE-URL-NGROK.ngrok-free.app"
 - ✅ Gestion d'erreurs identique
 
 **Prochaines étapes :**
+
 1. Démarrer le serveur Node.js : `npm start`
-2. Exposer avec ngrok : `ngrok http 3000`  
+2. Exposer avec ngrok : `ngrok http 3000`
 3. Mettre à jour l'URL dans `init.server.luau`
 
 ## 🧪 Test des Routes
@@ -186,17 +209,19 @@ curl -X DELETE https://votre-url.ngrok-free.app/api/player-disconnected \
 ## 🛠️ Scripts de Développement
 
 ### Configuration Automatique (Recommandé)
+
 ```bash
 # Script qui fait tout : ngrok + config + serveur
 ./setup-ngrok.sh
 ```
 
 ### Scripts Individuels
+
 ```bash
 # Serveur uniquement
 npm start
 
-# Serveur avec hot reload  
+# Serveur avec hot reload
 npm run dev
 
 # ngrok uniquement (serveur doit tourner)
@@ -217,23 +242,27 @@ backend-roblox/
 ```
 
 **Fichiers Roblox modifiés :**
+
 - `src/server/init.server.luau` : Configuration API intégrée
 - `src/shared/Config.luau` : Module optionnel (non utilisé actuellement)
 
 ## ✨ Avantages de cette Configuration
 
 ### Variables d'Environnement
+
 - ✅ URL ngrok centralisée dans `.env`
 - ✅ Port configurable
 - ✅ Pas de hardcoding dans le code
 - ✅ Fichier `.env` dans `.gitignore` (sécurité)
 
 ### Scripts Automatisés
+
 - ✅ `setup-ngrok.sh` : Configuration complète automatique
 - ✅ `update-url.sh` : Mise à jour facile de l'URL
 - ✅ Synchronisation backend ↔ Roblox
 
 ### Structure Modulaire
+
 - ✅ Configuration centralisée côté Roblox
 - ✅ Code plus maintenable
 - ✅ Facilite les changements d'environnement
