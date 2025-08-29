@@ -1,0 +1,90 @@
+.img-banner {
+  width: 100%;
+  height: auto;
+}
+.hero-banner {
+  position: relative;
+  width: 100%;
+}
+.content {
+  padding: 8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+.sections-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+}
+.div-section-content-4 {
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.div-section-content-3 {
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.div-section-content-2 {
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 1rem 0;
+}
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 1rem 0;
+  font-family: var(--font-main);
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--font-main);
+}
+p {
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  font-family: var(--font-main);
+}
+ul {
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  font-family: var(--font-main);
+}
+.icon {
+  font-size: 3rem;
+  text-align: center;
+}
+.YTvideo {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  /* max-width: 800px; */
+  border: none;
+  border-radius: 1rem;
+}

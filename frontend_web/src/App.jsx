@@ -5,6 +5,10 @@ import Ranking from "./components/Ranking";
 import Layout from "./components/layout/Layout";
 import Register from "./components/connexion/Register";
 import Login from "./components/connexion/Login";
+import Tsunami from "./components/disasters/Tsunami";
+import Earthquake from "./components/disasters/Earthquake";
+import Profile from "./components/Profile";
+
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
           <Route path="ranking" element={<Ranking />} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
+          <Route path="tsunami" element={<Tsunami />} />
+          <Route path="earthquake" element={<Earthquake />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Routes>
     </Router>

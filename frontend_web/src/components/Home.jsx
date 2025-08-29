@@ -1,5 +1,6 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+import { useUser } from "../contexts/UserContext";
+import { Link } from "react-router-dom";
 import BannerDesktop from "/images/image_banner.png";
 import BannerMobile from "/images/image_banner_mobile.png";
 import "./home.css";
@@ -12,11 +13,13 @@ function Home() {
       id: 1,
       name: t("home.disasters.tsunami"),
       image: "/images/disasters/tsunami/tsunami.png",
+      link: "tsunami",
     },
     {
       id: 2,
       name: t("home.disasters.earthquake"),
       image: "/images/disasters/earthquake/earthquake.png",
+      link: "earthquake",
     },
     {
       id: 3,
@@ -61,20 +64,31 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="home-disasters">
-        <h2 className="title-disasters">{t("home.disasters.title")}</h2>
-        <div className="carousel-disasters">
-          {disasters.map((disaster) => (
-            <div key={disaster.id} className="home-disaster-card">
-              <img
-                src={disaster.image}
-                alt={disaster.name}
-                className="disaster-img"
-              />
-              <p className="disaster-name">{disaster.name}</p>
-            </div>
-          ))}
-        </div>
+
+      <h2 className="title-disasters">{t("home.disasters.title")}</h2>
+      <div className="carousel-disasters">
+        {disasters.map((disaster) => (
+          <Link
+            to={disaster.link}
+            key={disaster.id}
+            className="home-disaster-card"
+          >
+            <img
+              src={disaster.image}
+              alt={disaster.name}
+              className="disaster-img"
+            />
+            <p className="disaster-name">{disaster.name}</p>
+          </Link>
+          // <div key={disaster.id} className="home-disaster-card">
+          //   <img
+          //     src={disaster.image}
+          //     alt={disaster.name}
+          //     className="disaster-img"
+          //   />
+          //   <p className="disaster-name">{disaster.name}</p>
+          // </div>
+        ))}
       </div>
     </div>
   );

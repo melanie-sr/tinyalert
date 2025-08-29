@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Search from "/images/icons/loupe.png";
 import "./disasters.css";
 
@@ -13,6 +14,7 @@ function Disasters() {
       name: t("disasters.tsunami.title"),
       description: t("disasters.tsunami.description"),
       image: "/images/disasters/tsunami/tsunami_little_banner.png",
+      link: "../tsunami",
     },
     {
       id: 2,
@@ -48,7 +50,7 @@ function Disasters() {
             <div className="disaster-info">
               <h3>{disaster.name}</h3>
               <p>{disaster.description}</p>
-              <a href="/">{t("disasters.button")}</a>
+              <Link to={disaster.link}>{t("disasters.button")}</Link>
             </div>
           </div>
         ))}

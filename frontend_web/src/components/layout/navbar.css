@@ -8,12 +8,23 @@
   display: none;
 }
 
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .nav-link {
   text-decoration: none;
   font-family: var(--font-heading);
   color: var(--color-secondary);
   font-size: 32px;
   font-weight: 400;
+}
+
+.nav-login {
+  font-size: 25px;
+  /* margin: 2rem; */
 }
 
 .navbar-mobile {

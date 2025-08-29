@@ -10,7 +10,9 @@
     "setup": "./setup-ngrok.sh",
     "update-url": "./update-url.sh",
     "clean": "./cleanup.sh",
-    "validate": "./validate.sh"
+    "validate": "./validate.sh",
+    "test-data": "./generate-test-data.sh",
+    "simulate": "./simulate-gameplay.sh"
   },
   "dependencies": {
     "cors": "^2.8.5",
